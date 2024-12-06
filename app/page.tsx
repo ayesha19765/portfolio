@@ -13,8 +13,8 @@ const Home = () => {
 	// State to track loading
 	const [isLoading, setIsLoading] = useState(true);
 
-	// Ref for the Hero section
-	const heroRef = useRef(null);
+	// Ref for the Hero section with type HTMLElement
+	const heroRef = useRef<HTMLElement>(null);
 
 	// Scroll to Hero on component mount
 	useEffect(() => {
