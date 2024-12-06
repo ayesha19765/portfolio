@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import { navItems } from "@/data";
 import { Loader } from "@/components/Loader1";
 import Hero from "@/components/Hero";
@@ -13,13 +13,14 @@ const Home = () => {
 	// State to track loading
 	const [isLoading, setIsLoading] = useState(true);
 
-	// Ref for the Hero section with type HTMLElement
-	const heroRef = useRef<HTMLElement>(null);
-
 	// Scroll to Hero on component mount
 	useEffect(() => {
-		if (heroRef.current) {
-			heroRef.current.scrollIntoView({ behavior: "smooth" });
+		// Ensure this code runs only on the client side
+		if (typeof document !== "undefined") {
+			const heroSection = document.querySelector("#hero");
+			if (heroSection) {
+				heroSection.scrollIntoView({ behavior: "smooth" });
+			}
 		}
 
 		// Simulate loading process (can be replaced with actual data fetching logic)
@@ -46,7 +47,7 @@ const Home = () => {
 						<FloatingNav navItems={navItems} />
 					</header>
 					<main className="max-w-7xl w-full">
-						<section id="hero" ref={heroRef}>
+						<section id="hero">
 							<Hero />
 						</section>
 						<section>
