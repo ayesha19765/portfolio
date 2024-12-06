@@ -356,5 +356,4 @@ export const frameWorks = [
 	{ svg: "/icons/ngrok.svg" },
 	{ svg: "/icons/DialogFlow.svg" },
 	{ svg: "/icons/FastAPI.svg" },
-	// github
 ];

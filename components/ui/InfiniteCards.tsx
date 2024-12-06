@@ -11,7 +11,7 @@ export const InfiniteMovingCards = ({
 	className,
 }: {
 	items: {
-		name: string;
+		// name: string;
 		svg: string;
 	}[];
 	direction?: "left" | "right";
