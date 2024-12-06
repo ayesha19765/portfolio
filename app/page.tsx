@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { navItems } from "@/data";
 import { Loader } from "@/components/Loader1";
 import Hero from "@/components/Hero";
@@ -13,14 +13,13 @@ const Home = () => {
 	// State to track loading
 	const [isLoading, setIsLoading] = useState(true);
 
+	// Ref for the Hero section
+	const heroRef = useRef(null);
+
 	// Scroll to Hero on component mount
 	useEffect(() => {
-		if (typeof document !== "undefined") {
-			// Check if document is available
-			const heroSection = document.querySelector("#hero");
-			if (heroSection) {
-				heroSection.scrollIntoView({ behavior: "smooth" });
-			}
+		if (heroRef.current) {
+			heroRef.current.scrollIntoView({ behavior: "smooth" });
 		}
 
 		// Simulate loading process (can be replaced with actual data fetching logic)
@@ -47,7 +46,7 @@ const Home = () => {
 						<FloatingNav navItems={navItems} />
 					</header>
 					<main className="max-w-7xl w-full">
-						<section id="hero">
+						<section id="hero" ref={heroRef}>
 							<Hero />
 						</section>
 						<section>
