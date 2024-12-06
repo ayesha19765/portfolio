@@ -8,15 +8,19 @@ import Footer from "@/components/Footer";
 import Clients from "@/components/Clients";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+
 const Home = () => {
 	// State to track loading
 	const [isLoading, setIsLoading] = useState(true);
 
 	// Scroll to Hero on component mount
 	useEffect(() => {
-		const heroSection = document.querySelector("#hero");
-		if (heroSection) {
-			heroSection.scrollIntoView({ behavior: "smooth" });
+		if (typeof document !== "undefined") {
+			// Check if document is available
+			const heroSection = document.querySelector("#hero");
+			if (heroSection) {
+				heroSection.scrollIntoView({ behavior: "smooth" });
+			}
 		}
 
 		// Simulate loading process (can be replaced with actual data fetching logic)
