@@ -1,4 +1,77 @@
+// "use client";
+// import { useEffect, useState } from "react";
+// import { navItems } from "@/data";
+// import { Loader } from "@/components/Loader1";
+// import Hero from "@/components/Hero";
+// import Grid from "@/components/Grid";
+// import Footer from "@/components/Footer";
+// import Clients from "@/components/Clients";
+// import RecentProjects from "@/components/RecentProjects";
+// import { FloatingNav } from "@/components/ui/FloatingNavbar";
+
+// const Home = () => {
+// 	// State to track loading
+// 	const [isLoading, setIsLoading] = useState(true);
+
+// 	// Scroll to Hero on component mount
+// 	useEffect(() => {
+// 		// Ensure this code runs only on the client side
+// 		if (typeof document !== "undefined") {
+// 			const heroSection = document.querySelector("#hero");
+// 			if (heroSection) {
+// 				heroSection.scrollIntoView({ behavior: "smooth" });
+// 			}
+// 		}
+
+// 		// Simulate loading process (can be replaced with actual data fetching logic)
+// 		const timer = setTimeout(() => {
+// 			setIsLoading(false); // Set loading to false after 2 seconds
+// 		}, 1400);
+
+// 		// Clean up timer on unmount
+// 		return () => clearTimeout(timer);
+// 	}, []);
+
+// 	return (
+// 		<div className="min-h-screen flex justify-center items-center flex-col bg-black-100 overflow-hidden mx-auto sm:px-10 px-5 ">
+// 			{/* Loader component */}
+// 			<Loader
+// 				isLoading={isLoading}
+// 				onTransitionEnd={() => console.log("Transition ended")}
+// 			/>
+
+// 			{/* Only render the content after the loader is hidden */}
+// 			{!isLoading && (
+// 				<>
+// 					<header>
+// 						<FloatingNav navItems={navItems} />
+// 					</header>
+// 					<main className="max-w-7xl w-full">
+// 						<section id="hero">
+// 							<Hero />
+// 						</section>
+// 						<section>
+// 							<Grid />
+// 						</section>
+// 						<section>
+// 							<RecentProjects />
+// 						</section>
+// 						<section>
+// 							<Clients />
+// 						</section>
+// 					</main>
+// 					<footer id="footer" className="py-10">
+// 						<Footer />
+// 					</footer>
+// 				</>
+// 			)}
+// 		</div>
+// 	);
+// };
+
+// export default Home;
 "use client";
+
 import { useEffect, useState } from "react";
 import { navItems } from "@/data";
 import { Loader } from "@/components/Loader1";
@@ -12,20 +85,30 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 const Home = () => {
 	// State to track loading
 	const [isLoading, setIsLoading] = useState(true);
+	// State to track if component is mounted (client-side)
+	const [isMounted, setIsMounted] = useState(false);
 
 	// Scroll to Hero on component mount
 	useEffect(() => {
-		// Ensure this code runs only on the client side
-		if (typeof document !== "undefined") {
+		// Mark as mounted on client-side
+		setIsMounted(true);
+
+		// Scroll logic
+		const scrollToHero = () => {
 			const heroSection = document.querySelector("#hero");
 			if (heroSection) {
 				heroSection.scrollIntoView({ behavior: "smooth" });
 			}
-		}
+		};
 
 		// Simulate loading process (can be replaced with actual data fetching logic)
 		const timer = setTimeout(() => {
-			setIsLoading(false); // Set loading to false after 2 seconds
+			setIsLoading(false);
+
+			// Only attempt to scroll if we're on the client side
+			if (typeof window !== "undefined") {
+				scrollToHero();
+			}
 		}, 1400);
 
 		// Clean up timer on unmount
@@ -33,15 +116,15 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div className="min-h-screen flex justify-center items-center flex-col bg-black-100 overflow-hidden mx-auto sm:px-10 px-5 ">
+		<div className="min-h-screen flex justify-center items-center flex-col bg-black-100 overflow-hidden mx-auto sm:px-10 px-5">
 			{/* Loader component */}
 			<Loader
 				isLoading={isLoading}
 				onTransitionEnd={() => console.log("Transition ended")}
 			/>
 
-			{/* Only render the content after the loader is hidden */}
-			{!isLoading && (
+			{/* Only render the content after the loader is hidden and component is mounted */}
+			{!isLoading && isMounted && (
 				<>
 					<header>
 						<FloatingNav navItems={navItems} />
