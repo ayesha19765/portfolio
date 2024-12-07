@@ -136,7 +136,7 @@ export const projects = [
 	{
 		id: 1,
 		title: "Ash Foods to Order Food",
-		des: "Experience the future of dining with our seamless and intuitive food ordering platform built using the MERN stack. Enjoy a world of culinary delights at your fingertips",
+		des: "Revolutionizing food ordering with a seamless MERN stack platform",
 		img: "/AshFoods.png",
 		// iconLists: ['/re.svg', '/tail.svg', '/ts.svg', '/three.svg', '/fm.svg'],
 		iconLists: [
@@ -159,7 +159,7 @@ export const projects = [
 	{
 		id: 2,
 		title: "CozyStay for hotel booking",
-		des: "Discover the elegance of our hotel building with this immersive 3D virtual tour built using the powerful MERN stack",
+		des: " Immersive 3D hotel booking experience powered by MERN technology",
 		img: "/cozyStay.png",
 		iconLists: ["/mongo.svg", "/node.svg", "/express.svg", "/react.svg"],
 		link: "https://github.com/ayesha19765/CozyStay",
@@ -167,7 +167,7 @@ export const projects = [
 	{
 		id: 3,
 		title: "Nayasa Chatbot - using NLP",
-		des: "A cutting-edge website with AI chatbot technology for seamless food ordering, featuring natural conversations, personalized recommendations, and efficient order management using the latest tech stack",
+		des: "AI-driven food ordering with natural language processing",
 		img: "/chatbot.jpeg",
 		iconLists: [
 			"/icons/DialogFlow.svg",
@@ -179,7 +179,7 @@ export const projects = [
 	{
 		id: 4,
 		title: "Innovative Portfolio with Next.js, Three.js, and Tailwind CSS",
-		des: "Discover my cutting-edge web portfolio, crafted with Next.js, Three.js, and Tailwind CSS. Experience seamless navigation, dynamic 3D visualizations, and responsive design, showcasing my expertise in modern web development.",
+		des: "Dynamic web showcase highlighting modern development technologies.",
 		img: "/portfolio.png",
 		iconLists: ["/next.svg", "/tail.svg", "/three.svg", "/icons/Node.js.svg"],
 		link: "https://github.com/ayesha19765/portfolio",

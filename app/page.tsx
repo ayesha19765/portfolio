@@ -105,21 +105,30 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div className="min-h-screen flex justify-center items-center flex-col bg-black-100 overflow-hidden max-w-[100vw] mx-auto sm:px-10 px-5">
+		<div
+			className="min-h-screen flex justify-center items-center flex-col bg-black-100 overflow-hidden max-w-[100vw] mx-auto sm:px-10 px-5"
+			style={{
+				overflowX: "hidden", // Explicitly prevent horizontal scrolling
+				width: "100vw",      // Force the container to fit within the viewport
+				boxSizing: "border-box", // Ensure padding/borders don't cause overflow
+			}}
+		>
 			{/* Loader component */}
 			<Loader
 				isLoading={isLoading}
 				onTransitionEnd={() => console.log("Transition ended")}
 			/>
-
+	
 			{/* Only render the content after the loader is hidden */}
 			{!isLoading && (
 				<>
 					<header className="hidden sm:block">
 						<FloatingNav navItems={navItems} />
 					</header>
-
-					<main className="max-w-7xl w-full">
+	
+					<main
+						className="max-w-7xl w-full flex flex-col justify-center items-center mx-auto space-y-8"
+					>
 						<section id="hero">
 							<Hero />
 						</section>
@@ -133,6 +142,7 @@ const Home = () => {
 							<Clients />
 						</section>
 					</main>
+	
 					<footer id="footer" className="py-10">
 						<Footer />
 					</footer>
@@ -140,6 +150,7 @@ const Home = () => {
 			)}
 		</div>
 	);
+	
 };
 
 export default Home;
