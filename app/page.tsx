@@ -70,7 +70,7 @@
 // };
 
 // export default Home;
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 import { navItems } from "@/data";
 import { Loader } from "@/components/Loader1";
@@ -106,7 +106,6 @@ const Home = () => {
 
 	return (
 		<div className="min-h-screen flex justify-center items-center flex-col bg-black-100 overflow-hidden max-w-[100vw] mx-auto sm:px-10 px-5">
-
 			{/* Loader component */}
 			<Loader
 				isLoading={isLoading}
@@ -116,9 +115,10 @@ const Home = () => {
 			{/* Only render the content after the loader is hidden */}
 			{!isLoading && (
 				<>
-					<header>
+					<header className="hidden sm:block">
 						<FloatingNav navItems={navItems} />
 					</header>
+
 					<main className="max-w-7xl w-full">
 						<section id="hero">
 							<Hero />

@@ -12,7 +12,7 @@ const Footer = () => {
 			</div>
 
 			{/* Content Section */}
-			<div className="flex flex-col relative items-center h-[400px] z-10">
+			<div className="px-10 flex flex-col relative items-center h-[400px] z-10">
 				<h1 className="heading lg:max-w-[45vw]">
 					Want to get in <span className="text-purple">touch?</span>
 				</h1>
