@@ -70,8 +70,7 @@
 // };
 
 // export default Home;
-"use client";
-
+"use client"
 import { useEffect, useState } from "react";
 import { navItems } from "@/data";
 import { Loader } from "@/components/Loader1";
@@ -85,29 +84,19 @@ import { FloatingNav } from "@/components/ui/FloatingNavbar";
 const Home = () => {
 	// State to track loading
 	const [isLoading, setIsLoading] = useState(true);
-	// State to track if component is mounted (client-side)
-	const [isMounted, setIsMounted] = useState(false);
 
 	// Scroll to Hero on component mount
 	useEffect(() => {
-		// Mark as mounted on client-side
-		setIsMounted(true);
-
-		// Scroll logic
-		const scrollToHero = () => {
-			const heroSection = document.querySelector("#hero");
-			if (heroSection) {
-				heroSection.scrollIntoView({ behavior: "smooth" });
-			}
-		};
-
 		// Simulate loading process (can be replaced with actual data fetching logic)
 		const timer = setTimeout(() => {
 			setIsLoading(false);
 
-			// Only attempt to scroll if we're on the client side
+			// Ensure DOM manipulation only occurs on the client
 			if (typeof window !== "undefined") {
-				scrollToHero();
+				const heroSection = document.querySelector("#hero");
+				if (heroSection) {
+					heroSection.scrollIntoView({ behavior: "smooth" });
+				}
 			}
 		}, 1400);
 
@@ -123,8 +112,8 @@ const Home = () => {
 				onTransitionEnd={() => console.log("Transition ended")}
 			/>
 
-			{/* Only render the content after the loader is hidden and component is mounted */}
-			{!isLoading && isMounted && (
+			{/* Only render the content after the loader is hidden */}
+			{!isLoading && (
 				<>
 					<header>
 						<FloatingNav navItems={navItems} />
