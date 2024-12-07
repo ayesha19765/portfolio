@@ -105,7 +105,8 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div className="min-h-screen flex justify-center items-center flex-col bg-black-100 overflow-hidden mx-auto sm:px-10 px-5">
+		<div className="min-h-screen flex justify-center items-center flex-col bg-black-100 overflow-hidden max-w-[100vw] mx-auto sm:px-10 px-5">
+
 			{/* Loader component */}
 			<Loader
 				isLoading={isLoading}
