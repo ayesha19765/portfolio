@@ -14,14 +14,14 @@ const words = [
 const Hero = () => {
 	return (
 		<div
-			className="pb-20 pt-36 h-[100vh] flex justify-center items-center"
+			className="md:pb-20 md:pt-36 h-[90vh] md:h-[100vh] flex justify-center items-center"
 			id="home"
 		>
 			{/**
 			 *  UI: Spotlights
 			 *  Link: https://ui.aceternity.com/components/spotlight
 			 */}
-			<div>
+			<div className="hidden md:block">
 				<Spotlight
 					className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
 					fill="white"
