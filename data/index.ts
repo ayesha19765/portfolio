@@ -54,7 +54,7 @@ export const gridItems = [
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-[35rem] w-[20rem] opacity-65",
-    titleClassName: "justify-center md:justify-start lg:justify-center",
+    titleClassName: "mt-20 items-start",
     img: "/b6.png",
     spareImg: "/grid.svg",
   },
@@ -116,8 +116,8 @@ export const projects = [
   {
     id: 5,
     title: "Cyber-Sanrakshak: A Centralized Firewall",
-    des: "A context-aware firewall with an admin dashboard and ML-based anomaly detection to enhance security and policy accuracy.",
-    img: "/cyberSanrakshak.png", // Placeholder image path
+    des: "Context-aware firewall with ML-based threat detection and admin dashboard.",
+    img: "/cyberSanrakshak.png", 
     iconLists: [
       "/next.svg",
       "/ts.svg",
@@ -130,8 +130,8 @@ export const projects = [
   {
     id: 6,
     title: "OCT Scan Enhancement with SRGANs",
-    des: "Implemented Super-Resolution GANs to reconstruct high-resolution medical OCT images from low-resolution scans for improved diagnosis.",
-    img: "/srgan-oct.png", 
+    des: "Reconstructed high-res OCT scans using Super-Resolution GANs for better diagnosis.",
+    img: "/srgan-oct-2.png", 
     iconLists: [
       "/icons/TensorFlow.svg",
       "/icons/Keras.svg",

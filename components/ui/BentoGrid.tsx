@@ -52,7 +52,7 @@ export const BentoGridItem = ({
 	titleClassName?: string;
 	spareImg?: string;
 }) => {
-	const leftLists = ["ReactJS", "Express", "Typescript"];
+	const leftLists = ["ReactJS", "Python", "Typescript","Express"  ];
 	const rightLists = ["ThreeJS", "NextJS", "Tailwind"];
 
 	const [copied, setCopied] = useState(false);
@@ -150,8 +150,6 @@ export const BentoGridItem = ({
 						{title}
 					</div>
 
-					{/* for the github 3d globe */}
-					{/* {id === 2 && <GridGlobe />} */}
 					{id === 2 && <WavyBackground wt="500" ht="400"></WavyBackground>}
 					{/* Tech stack list div */}
 					{id === 3 && (

@@ -12,7 +12,7 @@ const RecentProjects = () => {
 				A small selection of{" "}
 				<span className="text-purple">recent projects</span>
 			</h1>
-			<div className="flex flex-wrap items-center justify-around gap-16 mt-10">
+			<div className="flex flex-wrap items-center justify-around gap-16">
 				{projects.map((item) => (
 					<div
 						className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 md:min-w-[400px] "
@@ -31,12 +31,16 @@ const RecentProjects = () => {
 											className="relative w-full h-full overflow-hidden"
 											style={{ backgroundColor: "#13162D" }}
 										>
-											<img src="/bg.png" alt="bgimg" />
+											<img
+												src="/bg.png"
+												alt="bgimg"
+												className="w-full h-full object-cover"
+											/>
 										</div>
 										<img
 											src={item.img}
 											alt="cover"
-											className="z-10 absolute bottom-0 rotate-6"
+											className="z-10 absolute bottom-0 rotate-6 max-h-full max-w-full object-contain"
 										/>
 									</div>
 
