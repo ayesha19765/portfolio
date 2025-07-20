@@ -8,7 +8,7 @@ import { languagesAndTools } from "@/data/index";
 
 const TechStack = () => {
 	return (
-		<section id="skills" className="">
+		<section id="skills" className="md:pt-[15vh] md:pb-[5vh]">
 			<h1 className="heading">
 				My
 				<span className="text-purple"> tech Stack</span>

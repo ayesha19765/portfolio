@@ -7,12 +7,12 @@ const Footer = () => {
 	return (
 		<footer className="w-[100vw] relative" id="contact">
 			{/* Wavy Background */}
-			<div className="absolute inset-0 z-0 w-[100vw] left-0 top- h-[400px] ">
+			<div className="absolute inset-0 z-0 w-[100vw] left-0 top- h-[400px] md:h-[400px] ">
 				<WavyBackground ht="400" />
 			</div>
 
 			{/* Content Section */}
-			<div className="px-10 flex flex-col relative items-center h-[400px] z-10">
+			<div className="px-10 flex flex-col relative  md:items-center h-[400px]md:h-[400px] z-10">
 				<h1 className="heading lg:max-w-[45vw]">
 					Want to get in <span className="text-purple">touch?</span>
 				</h1>

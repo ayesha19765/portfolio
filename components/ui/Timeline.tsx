@@ -34,7 +34,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
 	return (
 		<div className="w-[90vw] md:w-[100vw] font-sans md:px-10" ref={containerRef}>
-			<div ref={ref} className="relative w-full md:mx-auto pb-20 mt-20">
+			<div ref={ref} className="relative w-full md:mx-auto md:pb-20 mt-20">
 				{data.map((item, index) => {
 					const isEven = index % 2 === 0;
 					return (
@@ -61,7 +61,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 							>
 								{!isEven && item.content}
 							</div>
-							<div className="md:hidden w-full px-4 mt-8 flex flex-col items-center">
+							<div className="md:hidden w-full md:px-4 mb-8 md:mb-0 md:mt-8 flex flex-col items-center">
 								<div className="w-full">{item.content}</div>
 							</div>
 						</div>

@@ -44,7 +44,7 @@ const Home = () => {
 					<header className="hidden sm:block">
 						<FloatingNav navItems={navItems} />
 					</header>
-					<main className="max-w-7xl w-full flex flex-col justify-center items-center mx-auto space-y-8 gap-[20vh]">
+					<main className="max-w-7xl w-full flex flex-col justify-center items-center mx-auto space-y-8 gap-[10vh]">
 						<section id="hero">
 							<Hero />
 						</section>
@@ -63,7 +63,7 @@ const Home = () => {
 					</main>
 					<footer
 						id="footer"
-						className="py-10 md:h-[100vh] flex flex-col items-end justify-end"
+						className="py-10 h-[100vh] flex flex-col items-end justify-end"
 					>
 						<Footer />
 					</footer>
