@@ -10,65 +10,67 @@ import { TimelineDemo } from "@/components/TimelineDemo";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
-
 const Home = () => {
-   const [isLoading, setIsLoading] = useState(true);
+	const [isLoading, setIsLoading] = useState(true);
 
-   useEffect(() => {
-	   const timer = setTimeout(() => {
-		   setIsLoading(false);
-		   if (typeof window !== "undefined") {
-			   const heroSection = document.querySelector("#hero");
-			   if (heroSection) {
-				   heroSection.scrollIntoView({ behavior: "smooth" });
-			   }
-		   }
-	   }, 1400);
-	   return () => clearTimeout(timer);
-   }, []);
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setIsLoading(false);
+			if (typeof window !== "undefined") {
+				const heroSection = document.querySelector("#hero");
+				if (heroSection) {
+					heroSection.scrollIntoView({ behavior: "smooth" });
+				}
+			}
+		}, 1400);
+		return () => clearTimeout(timer);
+	}, []);
 
-   return (
-	   <div
-		   className="min-h-screen flex justify-center items-center flex-col bg-black-100 overflow-hidden max-w-[100vw] mx-auto sm:px-10 px-5"
-		   style={{
-			   overflowX: "hidden",
-			   width: "100vw",
-			   boxSizing: "border-box",
-		   }}
-	   >
-		   <Loader
-			   isLoading={isLoading}
-			   onTransitionEnd={() => console.log("Transition ended")}
-		   />
-		   {!isLoading && (
-			   <>
-				   <header className="hidden sm:block">
-					   <FloatingNav navItems={navItems} />
-				   </header>
-				   <main className="max-w-7xl w-full flex flex-col justify-center items-center mx-auto space-y-8">
-					   <section id="hero">
-						   <Hero />
-					   </section>
-					   <section>
-						   <Grid />
-					   </section>
-					   <section>
-						   <TechStack />
-					   </section>
-					   <section>
-						   <TimelineDemo />
-					   </section>
-					   <section>
-						   <RecentProjects />
-					   </section>
-				   </main>
-				   <footer id="footer" className="py-10">
-					   <Footer />
-				   </footer>
-			   </>
-		   )}
-	   </div>
-   );
+	return (
+		<div
+			className="min-h-screen flex justify-center items-center flex-col bg-black-100 overflow-hidden max-w-[100vw] mx-auto sm:px-10 px-5"
+			style={{
+				overflowX: "hidden",
+				width: "100vw",
+				boxSizing: "border-box",
+			}}
+		>
+			<Loader
+				isLoading={isLoading}
+				onTransitionEnd={() => console.log("Transition ended")}
+			/>
+			{!isLoading && (
+				<>
+					<header className="hidden sm:block">
+						<FloatingNav navItems={navItems} />
+					</header>
+					<main className="max-w-7xl w-full flex flex-col justify-center items-center mx-auto space-y-8 gap-[20vh]">
+						<section id="hero">
+							<Hero />
+						</section>
+						<section>
+							<Grid />
+						</section>
+						<section>
+							<TechStack />
+						</section>
+						<section>
+							<TimelineDemo />
+						</section>
+						<section>
+							<RecentProjects />
+						</section>
+					</main>
+					<footer
+						id="footer"
+						className="py-10 md:h-[100vh] flex flex-col items-end justify-end"
+					>
+						<Footer />
+					</footer>
+				</>
+			)}
+		</div>
+	);
 };
 
 export default Home;

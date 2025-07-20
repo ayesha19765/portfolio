@@ -65,7 +65,7 @@ export function TimelineDemo() {
 	}));
 
 	return (
-		<div className="relative w-[100vw] overflow-clip  h-[fit]  p-4 md:p-8 md:mb-[10vh]">
+		<div className="relative w-[100vw] overflow-clip  h-[fit]  p-4 md:p-8">
 			<h1 className="heading">
 				My
 				<span className="text-purple"> Professional Journey</span>
