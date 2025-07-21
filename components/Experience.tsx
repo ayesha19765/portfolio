@@ -58,14 +58,14 @@ const experiences = [
 	},
 ];
 
-export function TimelineDemo() {
+export function Experience() {
 	const timelineData = experiences.map((exp) => ({
 		title: exp.date,
 		content: <ExperienceCard {...exp} />,
 	}));
 
 	return (
-		<div className="relative w-[100vw] overflow-clip  h-[fit] p-4 md:p-8">
+		<div id="experience" className="relative w-[100vw] overflow-clip  h-[fit] p-4 md:p-8">
 			<h1 className="heading">
 				My
 				<span className="text-purple"> Professional Journey</span>

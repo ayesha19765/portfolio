@@ -6,7 +6,7 @@ import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
 import TechStack from "@/components/TechStack";
-import { TimelineDemo } from "@/components/TimelineDemo";
+import { Experience } from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 
@@ -55,16 +55,13 @@ const Home = () => {
 							<TechStack />
 						</section>
 						<section>
-							<TimelineDemo />
+							<Experience />
 						</section>
 						<section>
 							<RecentProjects />
 						</section>
 					</main>
-					<footer
-						id="footer"
-						className="py-10"
-					>
+					<footer id="footer" className="py-10">
 						<Footer />
 					</footer>
 				</>
