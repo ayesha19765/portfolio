@@ -63,7 +63,7 @@ const Home = () => {
 					</main>
 					<footer
 						id="footer"
-						className="py-10 h-[100vh] flex flex-col items-end justify-end"
+						className="py-10"
 					>
 						<Footer />
 					</footer>
