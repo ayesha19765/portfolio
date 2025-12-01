@@ -49,7 +49,7 @@ const experiences = [
 				rel="noopener noreferrer"
 			>
 				<img
-					src="https://media.licdn.com/dms/image/v2/D560BAQHiyy0a6KVSYQ/company-logo_200_200/company-logo_200_200/0/1721414643057/yahweh_innovations_logo?e=1755734400&v=beta&t=he8Gsoe_ZGWkLGH9bTReXkmcAKpAKGXhaqvv8W-0loE"
+					src="https://media.licdn.com/dms/image/v2/D560BAQHiyy0a6KVSYQ/company-logo_200_200/company-logo_200_200/0/1721414643057/yahweh_innovations_logo?e=1766016000&v=beta&t=YUlBtgctF1_zXmzlGrE73VWD1UJ5-I093OvYvKX04nc"
 					alt="YahWeh Solutions Logo"
 					className="h-8 w-8 md:h-20 md:w-20 object-contain"
 				/>
