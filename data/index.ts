@@ -70,7 +70,6 @@ export const gridItems = [
 		spareImg: "",
 	},
 ];
-
 export const projects = [
 	{
 		id: 1,
@@ -87,29 +86,18 @@ export const projects = [
 		link: "https://github.com/ayesha19765/final_CSS",
 	},
 	{
-		id: 2,
-		title: "OCT Scan Enhancement with SRGANs",
-		des: "Reconstructed high-res OCT scans using Super-Resolution GANs for better diagnosis.",
-		img: "/project_images/srgan-oct-2.png",
+		id: 7,
+		title: "Ad Data: End-to-End Data Engineering Pipeline",
+		des: "Complete ETL pipeline for ad analytics, from raw CSV ingestion to warehouse-ready datasets for BI tools.",
+		img: "/project_images/adAnalytics.png",
 		iconLists: [
-			"/icons/TensorFlow.svg",
-			"/icons/Keras.svg",
-			"/icons/NumPy.svg",
+			"/icons/Apache Airflow.svg",
+			"/icons/BigQuery.svg",
+			"/icons/Docker.svg",
 			"/icons/Python.svg",
+			"/icons/MySQL.svg",
 		],
-		link: "https://github.com/ayesha19765/Enhancing-OCT-Scans-with-Super-Resolution-GANs",
-	},
-	{
-		id: 3,
-		title: "Nayasa Chatbot - using NLP",
-		des: "AI-driven food ordering with natural language processing.",
-		img: "/project_images/chatbot.jpeg",
-		iconLists: [
-			"/icons/DialogFlow.svg",
-			"/icons/ngrok.svg",
-			"/icons/FastApi.svg",
-		],
-		link: "https://github.com/ayesha19765/Smart-Chatbot-Integration-for-Enhanced-Food-Ordering-Experience",
+		link: "https://github.com/ayesha19765/ad-data",
 	},
 	{
 		id: 4,
@@ -151,26 +139,56 @@ export const projects = [
 		],
 		link: "https://github.com/ayesha19765/portfolio",
 	},
-];
-
-export const workExperience = [
 	{
-		id: 1,
-		title: "Full Stack Web Developer Intern",
-		company: "YahWeh Innovations",
-		timeline: "July 2024 - Present",
-		desc: "Boosted user engagement, conversions, and organic traffic through responsive web components, SEO optimization, and enhanced mobile usability during a Full Stack Web Development Internship.",
-		className: "md:col-span-2",
-		thumbnail: "/exp1.svg",
+		id: 3,
+		title: "Nayasa Chatbot - using NLP",
+		des: "AI-driven food ordering with natural language processing.",
+		img: "/project_images/chatbot.jpeg",
+		iconLists: [
+			"/icons/DialogFlow.svg",
+			"/icons/ngrok.svg",
+			"/icons/FastApi.svg",
+		],
+		link: "https://github.com/ayesha19765/Smart-Chatbot-Integration-for-Enhanced-Food-Ordering-Experience",
 	},
 	{
-		id: 1,
-		title: "Technical Head",
-		company: "Abhi",
-		timeline: "July 2024 - Present",
-		desc: "Boosted user engagement, conversions, and organic traffic through responsive web components, SEO optimization, and enhanced mobile usability during a Full Stack Web Development Internship.",
-		className: "md:col-span-2",
-		thumbnail: "/exp1.svg",
+		id: 8,
+		title: "Cloud Drop: Decentralized Image Upload and Sharing",
+		des: "Blockchain-based image sharing platform with secure ownership, access control, and decentralized storage.",
+		img: "/project_images/cloudDrop.png",
+		iconLists: [
+			"/icons/Solidity.svg",
+			"/icons/Ethereum.svg",
+			"/icons/React.svg",
+		],
+		link: "https://github.com/ayesha19765/Cloud-Drop",
+	},
+	{
+		id: 9,
+		title: "DefektGuard – Real-time AI-Powered Damage Detection",
+		des: "AI-driven computer vision system for real-time detection of damaged products in warehouse environments.",
+		img: "/project_images/defktGuard.jpg",
+		iconLists: [
+			"/icons/TensorFlow.svg",
+			"/icons/Python.svg",
+			"/icons/Flask.svg",
+			"/icons/MongoDB.svg",
+			"/icons/React.svg",
+		],
+		link: "https://github.com/ayesha19765/DefktGuard",
+	},
+	{
+		id: 2,
+		title: "OCT Scan Enhancement with SRGANs",
+		des: "Reconstructed high-res OCT scans using Super-Resolution GANs for better diagnosis.",
+		img: "/project_images/srgan-oct-2.png",
+		iconLists: [
+			"/icons/TensorFlow.svg",
+			"/icons/Keras.svg",
+			"/icons/NumPy.svg",
+			"/icons/Python.svg",
+		],
+		link: "https://github.com/ayesha19765/Enhancing-OCT-Scans-with-Super-Resolution-GANs",
 	},
 ];
 
