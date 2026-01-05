@@ -7,7 +7,7 @@ const experiences = [
 	{
 		company: "ServiceNow",
 		role: "Associate Software Engineering Intern",
-		date: "May 2025 – Present",
+		date: "May 2025 – July 2025",
 		location: "Hyderabad, On-site",
 		points: [
 			"Designed and built the Playbook Summarization modal using Seismic and Now Assist Skill Kit, improving workflow clarity and reducing context-switching.",
@@ -49,7 +49,7 @@ const experiences = [
 				rel="noopener noreferrer"
 			>
 				<img
-					src="https://media.licdn.com/dms/image/v2/D560BAQHiyy0a6KVSYQ/company-logo_200_200/company-logo_200_200/0/1721414643057/yahweh_innovations_logo?e=1766016000&v=beta&t=YUlBtgctF1_zXmzlGrE73VWD1UJ5-I093OvYvKX04nc"
+					src="/yahweh-logo.jpeg"
 					alt="YahWeh Solutions Logo"
 					className="h-8 w-8 md:h-20 md:w-20 object-contain"
 				/>
@@ -65,7 +65,10 @@ export function Experience() {
 	}));
 
 	return (
-		<div id="experience" className="relative w-[100vw] overflow-clip  h-[fit] p-4 md:p-8">
+		<div
+			id="experience"
+			className="relative w-[100vw] overflow-clip  h-[fit] p-4 md:p-8"
+		>
 			<h1 className="heading">
 				My
 				<span className="text-purple"> Professional Journey</span>
