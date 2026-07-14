@@ -6,14 +6,14 @@ import { Timeline } from "./ui/Timeline";
 const experiences = [
 	{
 		company: "ServiceNow",
-		role: "Associate Software Engineering Intern",
-		date: "May 2025 – July 2025",
-		location: "Hyderabad, On-site",
+		role: "Associate Software Engineer Intern",
+		date: "Jan 2026 – May 2026",
+		location: "Hyderabad, India",
 		points: [
-			"Designed and built the Playbook Summarization modal using Seismic and Now Assist Skill Kit, improving workflow clarity and reducing context-switching.",
-			"Developed a custom multi-record selector using activity definitions, enabling bulk selection and reducing manual configuration time.",
-			"Enhanced modal interactions by refining communication, error handling, and action dispatching for a seamless user experience.",
-			"Collaborated with cross-functional teams to deliver scalable components, improving workflows and accelerating feature delivery.",
+			"Architected and launched AI-powered Playbook Summarization using NowAssist, GraphQL APIs, async AMB workflows, and UI integrations across multiple LLM providers.",
+			"Designed 3 summarization variants and 5 refinement workflows with reusable UI extensions and scalable GenAI orchestration.",
+			"Improved AI response quality through prompt engineering and LLM evaluation, increasing OpenAI evaluation scores from 77.78% to 91.67%.",
+			"Enabled KB article lookup and preview functionality while migrating infrastructure to Mosaic for improved scalability and maintainability.",
 		],
 		icon: (
 			<a
@@ -24,24 +24,49 @@ const experiences = [
 				<img
 					src="https://cdn.icon-icons.com/icons2/2699/PNG/512/servicenow_logo_icon_168835.png"
 					alt="ServiceNow Logo"
-					className="h-8 w-8 md:h-20 md:w-20  object-contain"
+					className="h-8 w-8 md:h-20 md:w-20 object-contain"
 				/>
 			</a>
 		),
 	},
+
+	{
+		company: "ServiceNow",
+		role: "Software Engineering Intern",
+		date: "May 2025 – July 2025",
+		location: "Hyderabad, India",
+		points: [
+			"Built Playbook Summarization workflows using Seismic UI Framework and NowAssist Skill Kit to improve workflow understanding and usability.",
+			"Developed reusable UI components and custom multi-record selection workflows to simplify configuration and reduce manual effort.",
+			"Enhanced user interactions through improved state management, error handling, and action dispatching.",
+			"Collaborated with cross-functional teams to deliver scalable frontend components for enterprise workflows.",
+		],
+		icon: (
+			<a
+				href="https://www.servicenow.com/"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<img
+					src="https://cdn.icon-icons.com/icons2/2699/PNG/512/servicenow_logo_icon_168835.png"
+					alt="ServiceNow Logo"
+					className="h-8 w-8 md:h-20 md:w-20 object-contain"
+				/>
+			</a>
+		),
+	},
+
 	{
 		company: "YahWeh Solutions",
 		role: "Full Stack Web Developer Intern",
-		date: "April 2024 – Dec 2024",
+		date: "Apr 2024 – Dec 2024",
 		location: "Bangalore, Remote",
 		points: [
-			"Revamped key website components and applied responsive design principles, boosting user engagement.",
-			"Created and maintained a dynamic testimonial CRUD system, increasing content flexibility and reducing admin effort.",
-			"Integrated React Helmet to optimize SEO, improving discoverability through search engines.",
-			"Enhanced the Liquofy product page by resolving multiple bugs, improving responsiveness, and reducing load time.",
-			"Built and connected RESTful APIs with robust end-to-end testing, ensuring seamless functionality across frontend-backend flows.",
+			"Developed responsive React-based interfaces and improved product usability across multiple workflows.",
+			"Built CRUD modules and integrated REST APIs for seamless frontend-backend communication.",
+			"Optimized application performance and SEO using React Helmet and reusable components.",
+			"Performed debugging and API testing to improve reliability and maintainability.",
 		],
-
 		icon: (
 			<a
 				href="https://in.linkedin.com/company/yahweh-innovations"

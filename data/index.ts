@@ -211,55 +211,67 @@ export const socialMedia = [
 ];
 
 export const techStack = [
+	// AI / ML
+	{ svg: "/icons/TensorFlow.svg" },
+	{ svg: "/icons/PyTorch.svg" },
+	{ svg: "/icons/Keras.svg" },
+	{ svg: "/icons/scikit-learn.svg" },
+	{ svg: "/icons/Pandas.svg" },
+	{ svg: "/icons/NumPy.svg" },
+
+	// Frontend
 	{ svg: "/icons/TypeScript.svg" },
 	{ svg: "/icons/React.svg" },
 	{ svg: "/icons/Next.js.svg" },
+	{ svg: "/icons/Tailwind CSS.svg" },
+	{ svg: "/icons/Material UI.svg" },
+
+	// Backend
 	{ svg: "/icons/Node.js.svg" },
 	{ svg: "/icons/Express.svg" },
-	{ svg: "/icons/AWS.svg" },
-	{ svg: "/icons/Tailwind CSS.svg" },
-	{ svg: "/icons/JavaScript.svg " },
-	{ svg: "/icons/PostgresSQL.svg" },
-	{ svg: "/icons/MongoDB.svg" },
-	{ svg: "/icons/HTML5.svg" },
-	{ svg: "/icons/CSS3.svg" },
 	{ svg: "/icons/Flask.svg" },
-	{ svg: "/icons/Three.js.svg" },
-	{ svg: "/icons/Nodemon.svg" },
-	// { svg: "/icons/Seismic.svg" },
+	{ svg: "/icons/FastAPI.svg" },
+
+	// Databases
+	{ svg: "/icons/MongoDB.svg" },
+	{ svg: "/icons/PostgresSQL.svg" },
+	{ svg: "/icons/MySQL.svg" },
+
+	// Cloud & DevOps
+	{ svg: "/icons/AWS.svg" },
+	{ svg: "/icons/Docker.svg" },
 ];
 
 export const languagesAndTools = [
-	{ svg: "/icons/Git.svg" },
-	{ svg: "/icons/GitHub.svg" },
-	{ svg: "/icons/NPM.svg" },
-	{ svg: "/icons/MySQL.svg" },
-	{ svg: "/icons/Mongoose.js.svg" },
-	{ svg: "/icons/Material UI.svg" },
-	{ svg: "/icons/Bootstrap.svg" },
-	{ svg: "/icons/Pandas.svg" },
-	{ svg: "/icons/jQuery.svg" },
-	{ svg: "/icons/Markdown.svg" },
-];
-
-export const frameWorks = [
+	// Languages
 	{ svg: "/icons/Python.svg" },
 	{ svg: "/icons/C++.svg" },
 	{ svg: "/icons/Java.svg" },
 	{ svg: "/icons/C.svg" },
+	{ svg: "/icons/JavaScript.svg" },
+	{ svg: "/icons/HTML5.svg" },
+	{ svg: "/icons/CSS3.svg" },
+
+	// Tools
+	{ svg: "/icons/Git.svg" },
+	{ svg: "/icons/GitHub.svg" },
 	{ svg: "/icons/Postman.svg" },
-	{ svg: "/icons/FastAPI.svg" },
-	{ svg: "/icons/DialogFlow.svg" },
 	{ svg: "/icons/VS code.svg" },
-	{ svg: "/icons/IntelliJ IDEA.svg" },
-	{ svg: "/icons/Xcode.svg" },
-	{ svg: "/icons/ngrok.svg" },
-	{ svg: "/icons/NumPy.svg" },
-	{ svg: "/icons/scikit-learn.svg" },
+];
+
+
+
+export const frameWorks = [
+	// AI / GenAI
 	{ svg: "/icons/TensorFlow.svg" },
 	{ svg: "/icons/PyTorch.svg" },
 	{ svg: "/icons/Keras.svg" },
-	{ svg: "/icons/Matplotlib.svg" },
-	{ svg: "/icons/Canva.svg" },
-	{ svg: "/icons/Adobe Photoshop.svg" },
+	{ svg: "/icons/scikit-learn.svg" },
+
+	// Backend & APIs
+	{ svg: "/icons/FastAPI.svg" },
+	{ svg: "/icons/Flask.svg" },
+
+	// Other
+	{ svg: "/icons/Markdown.svg" },
 ];

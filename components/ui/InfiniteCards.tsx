@@ -49,7 +49,7 @@ export const InfiniteMovingCards = ({
 		if (containerRef.current) {
 			containerRef.current.style.setProperty(
 				"--animation-direction",
-				direction === "left" ? "forwards" : "reverse"
+				direction === "left" ? "forwards" : "reverse",
 			);
 		}
 	};
@@ -67,7 +67,7 @@ export const InfiniteMovingCards = ({
 			ref={containerRef}
 			className={cn(
 				"scroller relative z-20 w-screen overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
-				className
+				className,
 			)}
 		>
 			<ul
@@ -75,7 +75,7 @@ export const InfiniteMovingCards = ({
 				className={cn(
 					"flex min-w-full shrink-0 py-0 lg:py-0 w-max flex-nowrap",
 					start && "animate-scroll",
-					pauseOnHover && "hover:[animation-play-state:paused]"
+					pauseOnHover && "hover:[animation-play-state:paused]",
 				)}
 			>
 				{items.map((item, idx) => (
@@ -93,11 +93,17 @@ export const InfiniteMovingCards = ({
 						<blockquote className="flex items-center justify-center gap-2 relative w-full h-full">
 							{/* <div className="flex justify-center items-center w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] md:w-[100px] md:h-[80px] lg:w-[110px] lg:h-[110px] xl:w-[120px] xl:h-[120px]"> */}
 
-							<div className="flex justify-center items-center h-[80%] w-[80%] sm:h-full sm:w-full">
+							<div className="flex justify-center items-center">
 								<img
 									src={item.svg}
 									alt="icon"
-									className="object-contain h-full w-auto"
+									className="
+			object-contain
+			w-8 h-8
+			sm:w-10 sm:h-10
+			md:w-12 md:h-12
+			lg:w-14 lg:h-14
+		"
 								/>
 							</div>
 						</blockquote>
